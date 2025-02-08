@@ -47,8 +47,9 @@ func initStub(service Service) []reflect.Value {
 			// First step: encode arg
 			// Second step: call client's Invoke func
 
-			// we just print arg
+			// we just print arg and outType
 			fmt.Println(arg)
+			fmt.Println(outTyp)
 
 			first := reflect.New(outTyp.Elem()).Interface()
 			second := reflect.ValueOf(errors.New("nil"))

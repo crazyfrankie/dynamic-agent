@@ -13,7 +13,7 @@ type GetUserInfoResponse struct {
 	Id int
 }
 
-// UserService is a example for dynamic agent
+// UserService is example for dynamic agent
 // 1. All the field must be func
 // 2. All func have two args and two return values
 // 3. Args must be context.Context and a request's pointer by user design
